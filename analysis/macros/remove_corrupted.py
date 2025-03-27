@@ -34,5 +34,9 @@ for key in dictionary:
             
 #print("Found corrupted file in", ','.join(list_datasets))
 
+<<<<<<< HEAD
 with gzip.open(options.metadata, "wt") as fout:
+=======
+with gzip.open(options.metadata, "w") as fout:
+>>>>>>> chisq
     json.dump(dictionary, fout, indent=4)

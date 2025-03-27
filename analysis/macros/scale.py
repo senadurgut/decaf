@@ -67,7 +67,10 @@ def scale(filename):
     data_map["MET"] = ["MET"]
     data_map["SingleElectron"] = ["SingleElectron"]
     data_map["SinglePhoton"] = ["SinglePhoton"]
+<<<<<<< HEAD
     data_map["SingleMuon"] = ["SingleMuon"]
+=======
+>>>>>>> chisq
     data_map["EGamma"] = ["EGamma"]
     data_map["BTagMu"] = ["BTagMu"]
     for signal in hists['sumw'].keys():
