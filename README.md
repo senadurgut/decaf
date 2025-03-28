@@ -33,23 +33,15 @@ source ~/lpc-scripts/call_host.sh
 Now you should log out and log back in for the changes to take effect. To start the container use the following command. 
 
 ```
-<<<<<<< HEAD
 source /cvmfs/cms.cern.ch/cmsset_default.sh
 
-=======
->>>>>>> chisq
-cmssw-el7 -p --bind `readlink $HOME` --bind `readlink -f ${HOME}/nobackup/` --bind /uscms_data --bind /cvmfs -- /bin/bash
+
 ```
 
 Install `CMSSW_11_3_4` in your `nobackup` area:
 
 ```
 cd ~/nobackup
-<<<<<<< HEAD
-=======
-
-source /cvmfs/cms.cern.ch/cmsset_default.sh
->>>>>>> chisq
 cmsrel CMSSW_11_3_4
 cd CMSSW_11_3_4/src
 cmsenv
