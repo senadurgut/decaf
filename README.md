@@ -33,8 +33,7 @@ source ~/lpc-scripts/call_host.sh
 Now you should log out and log back in for the changes to take effect. To start the container use the following command. 
 
 ```
-source /cvmfs/cms.cern.ch/cmsset_default.sh
-
+cmssw-el7 -p --bind `readlink $HOME` --bind `readlink -f ${HOME}/nobackup/` --bind /uscms_data --bind /cvmfs -- /bin/bash
 
 ```
 
